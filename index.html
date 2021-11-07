@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header" id="header">
+            <h1 id="title">Local Fair Customer Survey Form</h1>
+            <p id="description">Please let us know your views on today's event</p>
+        </header>
+
+        <form action="" id="survey-form">
+            <!-- Name -->    
+            <div class="input-styling">    
+                <label 
+                    id="name-label" 
+                    for="name"
+                    class="label">
+                    Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    class="form-styling"
+                    placeholder="Enter your name" required>
+            </div>
+            <!--Email-->
+            <div class="input-styling">
+                <label 
+                    id="email-label"
+                    class="label">
+                    Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="form-styling"
+                    placeholder="Enter your email" required>
+            </div>
+            <!--Age-->
+            <div class="input-styling">
+                <label 
+                    id="number-label"
+                    class="label">
+                    Age <span style="font-size: 0.8rem">(optional)</span></label>
+                <input 
+                    type="number" 
+                    id="number"
+                    class="form-styling" 
+                    placeholder="Age" 
+                    min="13" max = "100" required>
+            </div>
+            <!--Radio Buttons-->
+            <div class="input-styling">
+                <label for="radiobtn"
+                    id="radio-label"
+                    class="label">
+                    How did you find out about today's event?
+                </label><br>
+                <label 
+                    for="radio">
+                    <input 
+                        type="radio" 
+                        id="radio_label" 
+                        name="event" 
+                        value="newspaper">Newspaper
+                </label><br>
+                <label 
+                    for="radio">
+                    <input 
+                        type="radio" 
+                        id="radio_label" 
+                        name="event" 
+                        value="tv advert">TV
+                </label><br>
+                <label 
+                    for="radio">
+                    <input 
+                        type="radio" 
+                        id="radio_label" 
+                        name="event" 
+                        value="radio">Radio
+                </label><br>
+                <label 
+                    for="radio">
+                    <input 
+                        type="radio" 
+                        id="radio_label" 
+                        name="event" 
+                        value="social media">Social Media
+                </label><br>
+                <label 
+                    for="radio">
+                    <input 
+                        type="radio" 
+                        id="radio_label" 
+                        name="event" 
+                        value="word of mouth">Word of Mouth
+                </label><br>
+            </div>
+            <!--Dropdown-->
+            <div class="input-styling">
+            <label                   
+                    for="hours"
+                    id="survey-label"
+                    class="label"> 
+                    How much time did you spend at today's event?</label><br>        
+                <select 
+                    name="hours" 
+                    id="dropdown"
+                    class="form-styling" >
+                <option 
+                    id="dropdown"disabled selected>
+                    Chose an Option</option>
+                <option 
+                    id="dropdown" 
+                    value="0-2 hours">
+                    0-2 Hours </option>
+                <option 
+                    id="dropdown" 
+                    value="2-4 hours">
+                    2-4 Hours </option>
+                <option 
+                    id="dropdown" 
+                    value="4-6 hours">
+                    4-6 Hours </option>
+                <option 
+                    id="dropdown" 
+                    value="6-8 hours">
+                    6-8 Hours </option>
+                <option 
+                    id="dropdown" 
+                    value="8+ hours">
+                    8+ Hours </option>
+                </select>
+            </div>
+            <!--Checkbox-->
+            <div class="input-styling">
+                <label 
+                    id="survey-label"   
+                    for="checkbox"
+                    class="label">
+                    Which rides/stalls did you visit at today's event? <br><span style="font-size: 0.8rem">(please tick those that apply)</span></label>
+                    <br>
+                    <input 
+                        class="checkbox-styling"    
+                        id="choice" 
+                        type="checkbox" 
+                        name="text" 
+                        value ="Ferris Wheel">
+                        Ferris Wheel
+                    <br>
+                    <input 
+                    class="checkbox-styling"    
+                    id="choice" 
+                        type="checkbox" 
+                        name="text" 
+                        value ="Carousel">
+                        Carousel
+                    <br>
+                        <input 
+                        class="checkbox-styling"    
+                        id="choice" 
+                            type="checkbox" 
+                            name="text" 
+                            value ="Bumper Cars">
+                            Bumper Cars
+                    <br>
+                    <input 
+                    class="checkbox-styling"    
+                    id="choice" 
+                        type="checkbox" 
+                        name="text" 
+                        value ="All you can eat">
+                        All You Can Eat Buffet Hall
+                    <br>
+                    <input 
+                    class="checkbox-styling"    
+                    id="choice" 
+                        type="checkbox" 
+                        name="text" 
+                        value ="BBQ & Grill">
+                        BBQ & Grill
+                    <br>
+                    <input 
+                    class="checkbox-styling"    
+                    id="choice" 
+                        type="checkbox" 
+                        name="text" 
+                        value ="other">
+                        Other <span style="font-size: 0.8rem">(please specify)</span>
+                    <br>
+                    <input 
+                    type="text" 
+                    id="optional" 
+                    class="form-styling"
+                    placeholder="" >
+                </div>
+            <!--Comment Box-->
+            <div class="input-styling">
+                <label 
+                    for="Comments"
+                    id="survey-label"
+                    class="label">
+                    If you have any suggestions for improvement, please comment below.
+                    </label>
+                    <textarea 
+                    name="textarea" 
+                    id="textarea" 
+                    class="comments" 
+                    cols="30" rows="10">
+                    </textarea>
+                </div>
+            <!-- Submit Button -->
+            <div class="input-styling">
+                    <button 
+                        type="submit"  
+                        id="submit">
+                        Submit</button> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+
+body{
+    background-image: linear-gradient(to right top, #0c326a, #134786, #165ea2, #1675bf, #108edc);
+    font-family: 'Nunito',sans-serif;
+    font-size: 1.25rem;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: white;
+}
+p{
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-style: italic;
+    color: white;
+}
+.container{
+    /* border: solid 4px black; */
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+    padding: 100px 0 100px 0;
+    justify-items: center;
+}
+#header{
+    /* border: solid 4px rgb(196, 23, 144); */
+    text-align: center;
+    align-self: center;
+    line-height: normal;
+    padding: 10px;
+    margin: auto;
+    width: 70%;
+}
+#survey-form{
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: #BFCFFF;
+    border-radius: 12px;
+    /* border: 1px solid rgba(209, 213, 219, 0.3); */
+    padding: 30px 20px 30px 10px;
+    margin: auto;
+    max-width: 70%;
+    height: auto;
+    color: #434655;
+}
+
+.label {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    /* border: 1px solid #b12222; */
+    color: #434655
+}
+
+.input-styling{
+    display: inline-block;
+    margin: 0 20px 20px ;
+    max-width: 100%;
+    /* border: 1px solid #0ac023; */
+    padding: 0 10px 0 10px;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #434655;
+    border-radius: 10px;
+}
+
+input[type=radio], [type=checkbox]{
+    margin: 5px;
+    height: 18px;
+    width: 18px;
+    border: 0px;
+    vertical-align: middle;
+    color: #434655;
+    line-height: normal;
+
+}
+
+.form-styling {
+    margin-top: 10px;
+    border: 0;
+    padding: 10px;
+    outline:0;
+    height:40px;
+    width: 650px;
+    align-items: center;
+    font-size: 1rem;
+    text-align: justify;
+    color: #434655;
+    border-radius: 5px;
+    
+}
+.comments{
+   margin-top: 10px;
+   /* border: 1px solid #e6e20b; */
+   padding: 10px;
+   outline:0;
+   height: 150px;
+   width: 650px;
+   min-height: 40px;
+   line-height: 20px;
+   font-size: 1rem;
+   text-align: justify;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #434655;
+}
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    color: #434655;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+#submit{
+      background-color: #434655;
+      margin: 0px;
+      border: 0;
+      border-radius: 5px;
+      padding: 10px;
+      width: 650px;
+      outline:0;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.25rem;
+      
+}
